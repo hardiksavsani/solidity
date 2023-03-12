@@ -1,0 +1,73 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "chaeckBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "payEther",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "payEtherTOAccount",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Payable address.sol": "demo"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Payable address.sol": {
+			"keccak256": "0x2b084b7b045c24f7828cb941c1fd1129532b07c049521b644efd913d1a06123e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://50ba991c10656eeba15058a1a32e186e3dec83b5a2c35a8bf259c7cc68a35414",
+				"dweb:/ipfs/QmamNpKjdgmuG7AXTX2pBCuc4ep2FPgr64z8hYyThqhhQb"
+			]
+		}
+	},
+	"version": 1
+}

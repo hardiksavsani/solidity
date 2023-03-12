@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "sold",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "x",
+				"outputs": [
+					{
+						"internalType": "int8",
+						"name": "",
+						"type": "int8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/mybool&int.sol": "property"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/mybool&int.sol": {
+			"keccak256": "0x2ba6f3db5b468f6ca4ed812e1a972157df005f843663924724e2569a4e86f80b",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://18173a4faae1f7103b519a64e33fb46b64c493b7dbbf8b892129f7cd4c4a8e5e",
+				"dweb:/ipfs/QmcfeAEHphsDLN3bUuE5F6B2oYRdZwJkW8GZS3yik2kXgD"
+			]
+		}
+	},
+	"version": 1
+}

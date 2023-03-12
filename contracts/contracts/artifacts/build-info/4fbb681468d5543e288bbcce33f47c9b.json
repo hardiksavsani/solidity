@@ -1,0 +1,373 @@
+{
+	"id": "4fbb681468d5543e288bbcce33f47c9b",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/Interfaces.sol": {
+				"content": "// SPDX-License-Identifier: GPL-3.0\r\n// SPDX-License-Identifier: MIT\r\npragma solidity >=0.7.0 <0.9.0;\r\n\r\n\r\n//is an agreement or a contract between itself and any contract that implements it\r\n \r\n //interface restrictions \r\n //they can only inherit from other innteface but not from other contracts\r\n //cannot declare state variables\r\n //cannot declare constructor\r\n //function can be declared but not implemented.All declared functions must be ext\r\n\r\ninterface parent{\r\n    /*\r\n    string public str;\r\n    address public  manager;\r\n\r\n    constructor (){\r\n        str='aliyan';\r\n        manager=msg.sender;\r\n    }\r\n\r\n    function setter(string memory _str) public {\r\n        str=_str; \r\n    }\r\n    */\r\n     function setter(string memory _str) external  ; \r\n    }\r\n\r\n\r\n\r\nabstract contract chaild is parent{\r\n    function setter(string memory _str) public override {\r\n        \r\n    }\r\n\r\n\r\n\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/Interfaces.sol": {
+				"chaild": {
+					"abi": [
+						{
+							"inputs": [
+								{
+									"internalType": "string",
+									"name": "_str",
+									"type": "string"
+								}
+							],
+							"name": "setter",
+							"outputs": [],
+							"stateMutability": "nonpayable",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"setter(string)": "846228a3"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_str\",\"type\":\"string\"}],\"name\":\"setter\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Interfaces.sol\":\"chaild\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/Interfaces.sol\":{\"keccak256\":\"0x06c7b23775eb4a1d386b7635c5d65f911db705dc29a9cd92b333295e126a9e1f\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://8c1cdc9e6c5fb5cd0662528d4b5eed75e1aa4ac0adc105be6632bf132aa83f18\",\"dweb:/ipfs/QmUcQ3PDWrnc5dkNtzW7DK7SbaH4mF8x3Ti66X1JgUgje1\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				},
+				"parent": {
+					"abi": [
+						{
+							"inputs": [
+								{
+									"internalType": "string",
+									"name": "_str",
+									"type": "string"
+								}
+							],
+							"name": "setter",
+							"outputs": [],
+							"stateMutability": "nonpayable",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"setter(string)": "846228a3"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_str\",\"type\":\"string\"}],\"name\":\"setter\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Interfaces.sol\":\"parent\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/Interfaces.sol\":{\"keccak256\":\"0x06c7b23775eb4a1d386b7635c5d65f911db705dc29a9cd92b333295e126a9e1f\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://8c1cdc9e6c5fb5cd0662528d4b5eed75e1aa4ac0adc105be6632bf132aa83f18\",\"dweb:/ipfs/QmUcQ3PDWrnc5dkNtzW7DK7SbaH4mF8x3Ti66X1JgUgje1\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/Interfaces.sol": {
+				"ast": {
+					"absolutePath": "contracts/Interfaces.sol",
+					"exportedSymbols": {
+						"chaild": [
+							17
+						],
+						"parent": [
+							7
+						]
+					},
+					"id": 18,
+					"license": "GPL-3.0",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.7",
+								".0",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "70:31:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"fullyImplemented": false,
+							"id": 7,
+							"linearizedBaseContracts": [
+								7
+							],
+							"name": "parent",
+							"nameLocation": "460:6:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"functionSelector": "846228a3",
+									"id": 6,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "setter",
+									"nameLocation": "714:6:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 4,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 3,
+												"mutability": "mutable",
+												"name": "_str",
+												"nameLocation": "735:4:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 6,
+												"src": "721:18:0",
+												"stateVariable": false,
+												"storageLocation": "memory",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_memory_ptr",
+													"typeString": "string"
+												},
+												"typeName": {
+													"id": 2,
+													"name": "string",
+													"nodeType": "ElementaryTypeName",
+													"src": "721:6:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_string_storage_ptr",
+														"typeString": "string"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "720:20:0"
+									},
+									"returnParameters": {
+										"id": 5,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "751:0:0"
+									},
+									"scope": 7,
+									"src": "705:47:0",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 18,
+							"src": "450:310:0",
+							"usedErrors": []
+						},
+						{
+							"abstract": true,
+							"baseContracts": [
+								{
+									"baseName": {
+										"id": 8,
+										"name": "parent",
+										"nodeType": "IdentifierPath",
+										"referencedDeclaration": 7,
+										"src": "796:6:0"
+									},
+									"id": 9,
+									"nodeType": "InheritanceSpecifier",
+									"src": "796:6:0"
+								}
+							],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 17,
+							"linearizedBaseContracts": [
+								17,
+								7
+							],
+							"name": "chaild",
+							"nameLocation": "786:6:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"baseFunctions": [
+										6
+									],
+									"body": {
+										"id": 15,
+										"nodeType": "Block",
+										"src": "861:18:0",
+										"statements": []
+									},
+									"functionSelector": "846228a3",
+									"id": 16,
+									"implemented": true,
+									"kind": "function",
+									"modifiers": [],
+									"name": "setter",
+									"nameLocation": "818:6:0",
+									"nodeType": "FunctionDefinition",
+									"overrides": {
+										"id": 13,
+										"nodeType": "OverrideSpecifier",
+										"overrides": [],
+										"src": "852:8:0"
+									},
+									"parameters": {
+										"id": 12,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 11,
+												"mutability": "mutable",
+												"name": "_str",
+												"nameLocation": "839:4:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 16,
+												"src": "825:18:0",
+												"stateVariable": false,
+												"storageLocation": "memory",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_memory_ptr",
+													"typeString": "string"
+												},
+												"typeName": {
+													"id": 10,
+													"name": "string",
+													"nodeType": "ElementaryTypeName",
+													"src": "825:6:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_string_storage_ptr",
+														"typeString": "string"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "824:20:0"
+									},
+									"returnParameters": {
+										"id": 14,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "861:0:0"
+									},
+									"scope": 17,
+									"src": "809:70:0",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "public"
+								}
+							],
+							"scope": 18,
+							"src": "768:120:0",
+							"usedErrors": []
+						}
+					],
+					"src": "70:818:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
